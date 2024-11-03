@@ -1,11 +1,16 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Tasklari ayri ayri branchlara yerlesdirdim!");
-
+class Solution {
+    public boolean isPalindrome(int x) {
+        int reversedvalue=0;
+        int x2=x;
+        while(x>0){
+            reversedvalue= x%10 + reversedvalue*10;
+            x/=10;
+        }
+        if(reversedvalue==x2){
+            return true;
+        }else{
+            return false;
+        }
 
     }
 }
